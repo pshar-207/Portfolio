@@ -161,3 +161,23 @@
     width: 4vw;
   }
 }
+@media screen and (min-aspect-ratio: 2/1) {
+  .web-text {
+    font-size: 10vw;
+  }
+  .developer-text {
+    font-size: 11vw;
+  }
+  .about-hi {
+    font-size: 2vw;
+  }
+  .about-name {
+    font-size: 3.5vw;
+  }
+  .about-paragraph {
+    font-size: 1.5vw;
+  }
+  .contact-list img {
+    width: 2vw;
+  }
+}
