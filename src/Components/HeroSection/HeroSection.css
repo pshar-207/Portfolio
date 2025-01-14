@@ -1,0 +1,163 @@
+.Hero-section-container {
+  font-family: "Roboto", serif;
+  height: 100svh;
+  background: #4a4a4a;
+  color: white;
+  padding: 30vh 9vw 5vh 9vw;
+  overflow-y: hidden;
+}
+.uper-hero-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5%;
+  margin-bottom: 5%;
+}
+.web-text {
+  font-size: 13vw;
+  line-height: 90%;
+}
+.about-hi {
+  font-size: 2.5vw;
+}
+.about-name {
+  font-size: 4vw;
+}
+.about-paragraph {
+  font-size: 1.9vw;
+}
+
+.lower-hero-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 5%;
+}
+.contact {
+  font-size: 2.5vw;
+  margin-bottom: 10%;
+}
+.contact-container {
+  margin-left: 2.5%;
+}
+.contact-list {
+  list-style: none;
+  display: flex;
+  gap: 2vw;
+}
+.contact-list li {
+  background-color: white;
+  padding: 0.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-list img {
+  width: 2.5vw;
+}
+.developer-text {
+  font-size: 11vw;
+  line-height: 68%;
+}
+@media screen and (max-aspect-ratio: 4.5/3) {
+  .about-hi {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+  .about-name {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+  }
+  .web-text {
+    font-size: 8vw;
+    position: absolute;
+    top: 47%;
+    left: 23%;
+    transform: translate(-23%, -47%);
+  }
+  .developer-text {
+    font-size: 8vw;
+    line-height: 90%;
+    position: absolute;
+    top: 47%;
+    left: 68%;
+    transform: translate(-68%, -47%);
+  }
+  .about-paragraph {
+    /* line-height: 90%; */
+    font-size: 2.5vw;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    text-align: center;
+  }
+  .contact {
+    position: absolute;
+    top: 60%;
+    left: 41%;
+    transform: translate(-41%, -60%);
+  }
+  .contact-list {
+    position: absolute;
+    top: 60%;
+    left: 56%;
+    transform: translate(-56%, -60%);
+  }
+}
+@media screen and (max-aspect-ratio: 1/1.5) {
+  .about-hi {
+    font-size: 3vw;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -37%);
+  }
+  .about-name {
+    font-size: 5vw;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+  .web-text {
+    font-size: 8vw;
+    position: absolute;
+    top: 47%;
+    left: 23%;
+    transform: translate(-23%, -47%);
+  }
+  .developer-text {
+    font-size: 8vw;
+    line-height: 90%;
+    position: absolute;
+    top: 47%;
+    left: 68%;
+    transform: translate(-68%, -47%);
+  }
+  .about-paragraph {
+    /* line-height: 90%; */
+    font-size: 2.5vw;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    text-align: center;
+  }
+  .contact {
+    display: none;
+  }
+  .contact-list {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+  }
+  .contact-list img {
+    width: 4vw;
+  }
+}
