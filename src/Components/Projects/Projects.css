@@ -1,6 +1,6 @@
 .Projects-container {
   font-family: "Roboto", serif;
-  background-color: whitesmoke;
+  background-color: #b9b9b9;
   color: white;
   display: flex;
   flex-direction: column;
@@ -26,12 +26,12 @@
   list-style: none;
 }
 .project-contianer {
-  background-color: #4a4a4a;
+  background-color: rgb(83, 83, 83);
   border-radius: 2vw;
 }
 .project-name-link {
   background-color: rgb(41, 41, 41);
-  color: whitesmoke;
+  color: aliceblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +47,7 @@
 }
 .github-source img,
 .project-link img {
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
   border-radius: 0.3vw;
   padding: 10%;
   width: 2.5vw;
