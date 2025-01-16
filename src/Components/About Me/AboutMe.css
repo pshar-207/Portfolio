@@ -1,0 +1,39 @@
+.AboutMe-Container {
+  font-family: "Roboto", serif;
+  background-color: #b9b9b9;
+  color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5vw;
+}
+.aboutMe-Heading-container {
+  display: flex;
+  justify-content: center;
+  border: 0.5vw solid #4a4a4a;
+  color: #4a4a4a;
+  font-size: 2.5vw;
+  font-weight: bold;
+  width: 25vw;
+  margin-top: 10%;
+  padding: 1vw;
+}
+.aboutMe-Paragraph {
+  text-align: justify;
+  padding: 5vw 18vw;
+}
+.aboutMe-Paragraph p {
+  font-size: 2vw;
+  line-height: 2.5vw;
+}
+/* Mobile Screen */
+@media screen and (max-aspect-ratio: 1/1.5) {
+  .aboutMe-Paragraph {
+    text-align: justify;
+    padding: 5vw 9vw;
+  }
+  .aboutMe-Paragraph p {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+}

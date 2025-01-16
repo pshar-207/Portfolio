@@ -3,6 +3,7 @@ import "./App.css";
 import HeroSection from "./Components/HeroSection/HeroSection";
 import Projects from "./Components/Projects/Projects";
 import Skills from "./Components/Skills/Skills";
+import AboutMe from "./Components/About Me/AboutMe";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <Projects />
       <Skills />
+      <AboutMe />
     </>
   );
 }
