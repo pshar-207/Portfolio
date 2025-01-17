@@ -1,0 +1,125 @@
+.navbar-cross-button {
+  background-color: transparent;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 8vw;
+  height: 8vw;
+  position: fixed;
+  right: 5vw;
+  top: 5vw;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.navbar-cross-button .line {
+  width: 6vw;
+  height: 0.5vw;
+  background-color: aliceblue;
+  border-radius: 0.2vw;
+  transition: all 0.3s ease;
+  margin-bottom: 2vw;
+}
+
+.navbar-cross-button .line1-active {
+  transform: translateY(4vw) rotate(45deg);
+}
+
+.navbar-cross-button .line2-active {
+  opacity: 0;
+}
+
+.navbar-cross-button .line3-active {
+  transform: translateY(-1.5vw) rotate(-45deg);
+}
+
+.Navbar-container {
+  font-family: "Roboto", serif;
+  background-color: #3f3f3f;
+  color: white;
+  width: 50vw;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  border-radius: 5vw;
+  z-index: 1;
+  box-shadow: 0.5vw 0.5vw 1.5vw rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.navbar-scrolled {
+  top: 2%;
+}
+
+.navbar {
+  padding: 1.5vw;
+  justify-content: space-around;
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  font-size: 1.5vw;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.1vw;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar li:hover::before {
+  transform: scaleX(1);
+}
+
+/* Mobile Screen */
+@media screen and (max-aspect-ratio: 1/1.5) {
+  .navbar-cross-button {
+    display: flex;
+  }
+
+  .Navbar-container {
+    background-color: #3f3f3f;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    transition: all 0.3s ease-in-out;
+    justify-content: center;
+    padding: 40vw 0;
+    display: flex;
+  }
+
+  .show-navbar {
+    z-index: 1;
+    opacity: 1;
+  }
+  .hide-navbar {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    font-size: 7vw;
+    position: relative;
+    cursor: pointer;
+  }
+}

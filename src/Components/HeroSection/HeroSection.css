@@ -54,11 +54,14 @@
 }
 .contact-list img {
   width: 2.5vw;
+  cursor: pointer;
 }
 .developer-text {
   font-size: 11vw;
   line-height: 68%;
 }
+
+/* 4/3 Screen */
 @media screen and (max-aspect-ratio: 4.5/3) {
   .about-hi {
     position: absolute;
@@ -88,7 +91,6 @@
     transform: translate(-68%, -47%);
   }
   .about-paragraph {
-    /* line-height: 90%; */
     font-size: 2.5vw;
     position: absolute;
     top: 80%;
@@ -109,6 +111,8 @@
     transform: translate(-56%, -60%);
   }
 }
+
+/* Mobile Screen */
 @media screen and (max-aspect-ratio: 1/1.5) {
   .about-hi {
     font-size: 3vw;
@@ -140,7 +144,6 @@
     transform: translate(-68%, -47%);
   }
   .about-paragraph {
-    /* line-height: 90%; */
     font-size: 2.5vw;
     position: absolute;
     top: 65%;
@@ -161,6 +164,8 @@
     width: 4vw;
   }
 }
+
+/* Wide Screen */
 @media screen and (min-aspect-ratio: 2/1) {
   .web-text {
     font-size: 10vw;

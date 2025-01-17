@@ -5,7 +5,7 @@ import linkedin_icon from "../../assets/Contact/linkedin.svg";
 import github_icon from "../../assets/Contact/github.svg";
 import email_icon from "../../assets/Contact/email.png";
 
-export default function HeroSection() {
+export default function HeroSection({ scrollToSection }) {
   return (
     <>
       <div className="Hero-section-container">
@@ -26,19 +26,25 @@ export default function HeroSection() {
             <p className="contact">Contact</p>
             <ul className="contact-list">
               <li>
-                <a href="https://www.linkedin.com/in/praveensharma07/">
+                <a
+                  href="https://www.linkedin.com/in/praveen-sharma-264b6b344/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={linkedin_icon} alt="" />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/pshar-207">
+                <a
+                  href="https://github.com/pshar-207"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={github_icon} alt="" />
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  <img src={email_icon} alt="" />
-                </a>
+              <li onClick={() => scrollToSection("contact")}>
+                <img src={email_icon} alt="" />
               </li>
             </ul>
           </div>
