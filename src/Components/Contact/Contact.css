@@ -51,6 +51,7 @@ textarea:-webkit-autofill {
   display: flex;
   justify-content: center;
 }
+
 .form-button button {
   background-color: #b9b9b9;
   color: #4a4a4a;
@@ -63,8 +64,15 @@ textarea:-webkit-autofill {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  outline: none;
+}
+.form-button button:focus {
+  outline: none;
+  box-shadow: none;
 }
 
+.form-button button:focus::after,
+.form-button button:focus::before,
 .form-button button::before,
 .form-button button::after {
   content: "";
@@ -75,21 +83,30 @@ textarea:-webkit-autofill {
   transform: scaleX(0);
   transition: transform 0.3s ease-out;
 }
+.form-button button:focus::before,
 .form-button button::before {
   bottom: 0;
   right: -0.5vw;
   transform-origin: bottom right;
 }
+.form-button button:focus::after,
 .form-button button::after {
   top: 0;
   left: 0;
   transform-origin: top left;
 }
+.form-button button:focus-visible::before,
 .form-button button:hover::before {
   transform: scaleX(1.2);
 }
+.form-button button:focus-visible::after,
 .form-button button:hover::after {
   transform: scaleX(1);
+}
+
+.message-status {
+  font-size: 2vw;
+  margin-bottom: 2vw;
 }
 
 /* Mobile Screen */
@@ -112,5 +129,8 @@ textarea:-webkit-autofill {
   .form-button button {
     font-size: 2.5vw;
     margin: 5vw 0;
+  }
+  .message-status {
+    font-size: 2.5vw;
   }
 }
