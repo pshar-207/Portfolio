@@ -1,16 +1,16 @@
 import React from "react";
 import "./Skills.css";
-import html5_svg from "../../assets/html5.svg";
-import css3_svg from "../../assets/css3.svg";
-import javascript_svg from "../../assets/javascript.svg";
-import react_svg from "../../assets/react.svg";
-import github_svg from "../../assets/github.svg";
-import figma_svg from "../../assets/figma.svg";
-import node_js_svg from "../../assets/node_js.svg";
-import mysql_svg from "../../assets/mysql.svg";
-import java_svg from "../../assets/java.svg";
-import cpp_svg from "../../assets/cpp.svg";
-import c_svg from "../../assets/c.svg";
+import html5_svg from "../../assets/Skills/html5.svg";
+import css3_svg from "../../assets/Skills/css3.svg";
+import javascript_svg from "../../assets/Skills/javascript.svg";
+import react_svg from "../../assets/Skills/react.svg";
+import github_svg from "../../assets/Skills/github.svg";
+import figma_svg from "../../assets/Skills/figma.svg";
+import node_js_svg from "../../assets/Skills/node_js.svg";
+import mysql_svg from "../../assets/Skills/mysql.svg";
+import java_svg from "../../assets/Skills/java.svg";
+import cpp_svg from "../../assets/Skills/cpp.svg";
+import c_svg from "../../assets/Skills/c.svg";
 
 export default function Skills() {
   return (
