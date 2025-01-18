@@ -119,16 +119,16 @@
   .about-hi {
     font-size: 5vw;
     position: absolute;
-    top: 35%;
+    top: 28%;
     left: 50%;
-    transform: translate(-50%, -35%);
+    transform: translate(-50%, -28%);
   }
   .about-name {
     font-size: 6vw;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -35%);
     width: 100%;
     text-align: center;
   }
@@ -136,42 +136,43 @@
     font-size: 8vw;
     font-size: 12vw;
     position: absolute;
-    top: 47%;
+    top: 45%;
     left: 8%;
-    transform: translate(-8%, -47%);
+    transform: translate(-8%, -45%);
   }
   .developer-text {
     font-size: 8vw;
     font-size: 12vw;
     line-height: 90%;
     position: absolute;
-    top: 47%;
+    top: 45%;
     left: 90%;
-    transform: translate(-90%, -47%);
+    transform: translate(-90%, -45%);
   }
-  .about-paragraph {
-    font-size: 4vw;
-    width: 80vw;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -65%);
-    text-align: center;
-  }
+
   .contact {
     display: none;
   }
   .contact-list {
     position: absolute;
-    top: 55%;
+    top: 56%;
     left: 50%;
-    transform: translate(-50%, -55%);
+    transform: translate(-50%, -56%);
   }
   .contact-list li {
     height: 8vw;
   }
   .contact-list img {
     width: 6vw;
+  }
+  .about-paragraph {
+    font-size: 4vw;
+    width: 80vw;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    text-align: center;
   }
 }
 
