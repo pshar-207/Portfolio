@@ -48,14 +48,28 @@
 .Skills-list ul li p {
   font-size: 1.5vw;
 }
+
 /* Mobile Screen */
 @media screen and (max-aspect-ratio: 1/1.5) {
+  .skills-Heading-container {
+    font-size: 4vw;
+    width: 35vw;
+    margin-top: 10%;
+    padding: 1.5vw;
+  }
+  .Skills-list-container {
+    padding: 10%;
+  }
+  .Skills-list-container span {
+    font-size: 3.5vw;
+    margin-bottom: 8vw;
+  }
   .Skills-list ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 5vw;
-    column-gap: 15vw;
-    margin-bottom: 10vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10vw;
+    column-gap: 10vw;
+    margin-bottom: 20vw;
   }
   .Skills-list ul li img {
     width: 12vw;
@@ -63,6 +77,6 @@
     margin-bottom: 1vw;
   }
   .Skills-list ul li p {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 }
