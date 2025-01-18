@@ -121,3 +121,46 @@
     line-height: 2.5vw;
   }
 }
+
+/* Mobile Screen */
+@media screen and (max-aspect-ratio: 1/1.5) {
+  .projects-Heading-container {
+    font-size: 4vw;
+    width: 35vw;
+    margin-top: 10%;
+    padding: 1.5vw;
+  }
+  .project-name {
+    font-size: 4vw;
+  }
+  .github-source img,
+  .project-link img {
+    width: 4vw;
+  }
+  .project-link-container {
+    gap: 1.5vw;
+  }
+  .project-images-container img {
+    border-radius: 0;
+  }
+  .project-images-about {
+    display: block;
+  }
+  .project-about {
+    font-size: 4vw;
+  }
+  .project-about-paragraph {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+  .technologies-use {
+    font-size: 4vw;
+  }
+  .technologies-list {
+    margin-left: 2.5vw;
+  }
+  .technology {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+}
