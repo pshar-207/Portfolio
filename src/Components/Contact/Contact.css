@@ -111,6 +111,12 @@ textarea:-webkit-autofill {
 
 /* Mobile Screen */
 @media screen and (max-aspect-ratio: 1/1.5) {
+  .Contact-Heading-container {
+    font-size: 4vw;
+    width: 35vw;
+    margin-top: 10%;
+    padding: 1.5vw;
+  }
   .form-container {
     gap: 8vw;
   }
@@ -118,19 +124,19 @@ textarea:-webkit-autofill {
   form input[type="email"],
   form input[type="tel"],
   form textarea {
-    padding: 1vw;
-    width: 50vw;
-    font-size: 2vw;
+    padding: 2vw;
+    width: 60vw;
+    font-size: 3vw;
   }
   form textarea {
-    max-width: 50vw;
-    min-width: 50vw;
+    max-width: 60vw;
+    min-width: 60vw;
   }
   .form-button button {
-    font-size: 2.5vw;
-    margin: 5vw 0;
+    font-size: 4vw;
+    margin: 8vw 0;
   }
   .message-status {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 }
