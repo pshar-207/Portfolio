@@ -99,6 +99,7 @@
     border-radius: 0;
     transition: all 0.3s ease-in-out;
     justify-content: center;
+    align-items: center;
     padding: 40vw 0;
     display: flex;
   }
@@ -115,6 +116,7 @@
   .navbar {
     flex-direction: column;
     align-items: center;
+    height: 80vw;
   }
 
   .navbar li {

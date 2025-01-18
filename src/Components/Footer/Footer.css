@@ -39,16 +39,20 @@
   .backToTop-contaier {
     margin: 5vw 0;
   }
+  .backToTop-contaier img {
+    width: 4vw;
+    margin-bottom: 2vw;
+  }
   .backToTop-contaier p {
-    font-size: 2vw;
+    font-size: 3.5vw;
   }
   .link-container {
-    margin-bottom: 10vw;
+    margin-bottom: 15vw;
   }
   .link-list {
-    gap: 5vw;
+    gap: 10vw;
   }
   .link-list li img {
-    width: 6vw;
+    width: 8vw;
   }
 }
