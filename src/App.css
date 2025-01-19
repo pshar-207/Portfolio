@@ -1,0 +1,32 @@
+:root {
+  --bg-color: rgb(225, 225, 225);
+  --font-color: rgb(0, 0, 0);
+  --font-family: "Roboto", serif;
+
+  --nav-bg-color: rgb(225, 225, 225);
+  --nav-font-color: rgb(0, 0, 0);
+  --mobile-nav-cross-button-color: rgb(0, 0, 0);
+  --mobile-nav-bg-color: rgb(225, 225, 225);
+  --mobile-nav-font-color: rgb(0, 0, 0);
+
+  --upper-shadow: rgb(255, 255, 255);
+  --lower-shadow: rgba(0, 0, 0, 0.3);
+
+  --hero-bg-color: rgb(225, 225, 225);
+  --hero-font-color: rgb(0, 0, 0);
+  --hero-contact-icon-bg-color: rgb(225, 225, 225);
+
+  --project-heading-bg-color: rgb(225, 225, 225);
+  --project-heading-font-color: rgb(0, 0, 0);
+  --project-heading-icon-color: rgb(225, 225, 225);
+  --project-bg-color: rgb(225, 225, 225);
+  --project-font-color: rgb(0, 0, 0);
+
+  --footer-bg-color: rgb(0, 0, 0);
+  --footer-font-color: rgb(225, 225, 225);
+}
+
+* {
+  transition: background-color 0.3s ease-in-out, color 0.05s ease-in-out,
+    border 0.3s ease-in-out, transform 0.3s ease-in-out;
+}

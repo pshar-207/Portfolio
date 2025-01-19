@@ -1,0 +1,30 @@
+.ThemeMode-container {
+  position: fixed;
+  top: 3%;
+  right: 2%;
+  transform: translate(3%, 2%);
+}
+.theme-button {
+  width: fit-content;
+}
+.sun-icon {
+  width: 4vw;
+}
+.moon-icon {
+  width: 4vw;
+}
+
+/* Mobile Screen */
+@media screen and (max-aspect-ratio: 1/1.5) {
+  .ThemeMode-container {
+    top: 2%;
+    left: 2%;
+    transform: translate(2%, 2%);
+  }
+  .sun-icon {
+    width: 8vw;
+  }
+  .moon-icon {
+    width: 8vw;
+  }
+}

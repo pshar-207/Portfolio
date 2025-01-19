@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
+import ThemeMode from "./Components/ThemeMode/ThemeMode";
 import HeroSection from "./Components/HeroSection/HeroSection";
 import AboutMe from "./Components/About Me/AboutMe";
 import Skills from "./Components/Skills/Skills";
@@ -32,6 +33,7 @@ function App() {
   return (
     <>
       <Navbar scrollToSection={scrollToSection} />
+      <ThemeMode />
       <div ref={heroRef}>
         <HeroSection scrollToSection={scrollToSection} />
       </div>

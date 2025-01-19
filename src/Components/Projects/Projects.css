@@ -1,7 +1,7 @@
 .Projects-container {
-  font-family: "Roboto", serif;
-  background-color: #b9b9b9;
-  color: white;
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--font-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,13 +10,14 @@
 .projects-Heading-container {
   display: flex;
   justify-content: center;
-  border: 0.5vw solid #4a4a4a;
-  color: #4a4a4a;
+  border: 0.5vw solid var(--font-color);
   font-size: 2.5vw;
   font-weight: bold;
   width: 25vw;
   margin-top: 10%;
   padding: 1vw;
+  box-shadow: 0.5vw 0.5vw 1.5vw var(--lower-shadow),
+    -0.5vw -0.5vw 1.5vw var(--upper-shadow);
 }
 
 .project-list-container {
@@ -26,17 +27,21 @@
   list-style: none;
 }
 .project-contianer {
-  background-color: rgb(83, 83, 83);
+  background-color: var(--project-bg-color);
+  color: var(--project-font-color);
   border-radius: 2vw;
+  box-shadow: 0.5vw 0.5vw 1.5vw var(--lower-shadow),
+    -0.5vw -0.5vw 1.5vw var(--upper-shadow);
 }
 .project-name-link {
-  background-color: rgb(41, 41, 41);
-  color: aliceblue;
+  background-color: var(--project-heading-bg-color);
+  color: var(--project-heading-font-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2% 2.5%;
   border-radius: 2vw 2vw 0 0;
+  border-bottom: 0.1vw solid var(--project-font-color);
 }
 .project-link-container {
   display: flex;
@@ -47,7 +52,7 @@
 }
 .github-source img,
 .project-link img {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--project-heading-icon-color);
   border-radius: 0.3vw;
   padding: 10%;
   width: 2.5vw;

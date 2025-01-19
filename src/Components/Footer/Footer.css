@@ -1,7 +1,7 @@
 .Footer-Container {
-  font-family: "Roboto", serif;
-  background-color: #000000;
-  color: white;
+  font-family: var(--font-family);
+  background-color: var(--footer-bg-color);
+  color: var(--footer-font-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +17,7 @@
   width: 2vw;
   margin-bottom: 1vw;
 }
+
 .backToTop-contaier p {
   font-size: 1.5vw;
 }

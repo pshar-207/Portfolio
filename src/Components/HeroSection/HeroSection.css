@@ -1,8 +1,8 @@
 .Hero-section-container {
-  font-family: "Roboto", serif;
+  font-family: var(--font-family);
   height: 100svh;
-  background: #4a4a4a;
-  color: white;
+  background-color: var(--hero-bg-color);
+  color: var(--hero-font-color);
   padding: 30vh 9vw 5vh 9vw;
   overflow-y: hidden;
 }
@@ -46,11 +46,13 @@
   gap: 2vw;
 }
 .contact-list li {
-  background-color: white;
+  background-color: var(--hero-contact-icon-bg-color);
   padding: 0.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0.5vw 0.5vw 1.5vw var(--lower-shadow),
+    -0.5vw -0.5vw 1.5vw var(--upper-shadow);
 }
 .contact-list img {
   width: 2.5vw;
