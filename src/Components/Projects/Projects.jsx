@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Projects.css";
 import project1 from "../../assets/Project/project1.jpg";
 import link_icon from "../../assets/Project/link.svg";
 import github_icon from "../../assets/Project/github.svg";
 
 export default function Projects() {
+  useEffect(() => {
+    console.log("Initializing AOS...");
+    AOS.init({
+      duration: 800,
+      offset: 50,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
   return (
     <>
       <div className="Projects-container">
-        <div className="projects-Heading-container">
+        <div data-aos="fade-up" className="projects-Heading-container">
           <span>PORTFOLIO</span>
         </div>
-        <div className="project-list-container">
+        <div data-aos="fade-up" className="project-list-container">
           <ul className="project-list">
             <li className="project">
               <div className="project-contianer">

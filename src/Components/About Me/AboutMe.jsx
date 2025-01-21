@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./AboutMe.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function AboutMe() {
+  useEffect(() => {
+    console.log("Initializing AOS...");
+    AOS.init({
+      duration: 800,
+      offset: 50,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
   return (
     <>
       <div className="AboutMe-Container">
-        <div className="aboutMe-Heading-container">
+        <div data-aos="fade-up" className="aboutMe-Heading-container">
           <span>ABOUT ME</span>
         </div>
-        <div className="aboutMe-Paragraph">
+        <div data-aos="fade-up" className="aboutMe-Paragraph">
           <p>
             I am a recent Bachelor of Computer Applications (BCA) graduate with
             an academic score of 80.56%. I have developed a full-featured

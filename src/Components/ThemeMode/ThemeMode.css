@@ -1,8 +1,20 @@
+@keyframes ThemeSlideInFromRight {
+  from {
+    opacity: 0;
+    right: 0;
+  }
+  to {
+    opacity: 1;
+    right: 2%;
+  }
+}
 .ThemeMode-container {
   position: fixed;
   top: 3%;
   right: 2%;
   transform: translate(3%, 2%);
+  animation: ThemeSlideInFromRight 1s ease-out;
+  z-index: 2;
 }
 .theme-button {
   width: fit-content;
@@ -16,10 +28,21 @@
 
 /* Mobile Screen */
 @media screen and (max-aspect-ratio: 1/1.5) {
+  @keyframes ThemeSlideInFromLeft {
+    from {
+      opacity: 0;
+      left: 0;
+    }
+    to {
+      opacity: 1;
+      left: 2%;
+    }
+  }
   .ThemeMode-container {
     top: 2%;
     left: 2%;
     transform: translate(2%, 2%);
+    animation: ThemeSlideInFromLeft 1s ease-out;
   }
   .sun-icon {
     width: 8vw;

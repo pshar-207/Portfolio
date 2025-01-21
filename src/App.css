@@ -9,8 +9,8 @@
   --mobile-nav-bg-color: rgb(225, 225, 225);
   --mobile-nav-font-color: rgb(0, 0, 0);
 
-  --upper-shadow: rgb(255, 255, 255);
-  --lower-shadow: rgba(0, 0, 0, 0.3);
+  --upper-shadow: rgba(255, 255, 255, 0.5);
+  --lower-shadow: rgba(0, 0, 0, 0.1);
 
   --hero-bg-color: rgb(225, 225, 225);
   --hero-font-color: rgb(0, 0, 0);

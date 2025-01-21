@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -40,15 +42,26 @@ export default function Contact() {
       );
   };
 
+  useEffect(() => {
+    console.log("Initializing AOS...");
+    AOS.init({
+      duration: 800,
+      offset: 50,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
   return (
     <>
       <div className="Contact-container">
-        <div className="Contact-Heading-container">
+        <div data-aos="fade-up" className="Contact-Heading-container">
           <span>CONTACT</span>
         </div>
-        <form action="" onSubmit={handleSubmit}>
+        <form data-aos="fade-up" action="" onSubmit={handleSubmit}>
           <div className="form-container">
             <input
+              data-aos="fade-up"
               type="text"
               name="name"
               placeholder="ENTER YOUR NAME"
@@ -57,6 +70,7 @@ export default function Contact() {
               required
             />
             <input
+              data-aos="fade-up"
               type="email"
               name="email"
               placeholder="ENTER YOUR EMAIL"
@@ -65,6 +79,7 @@ export default function Contact() {
               required
             />
             <input
+              data-aos="fade-up"
               type="tel"
               name="phone"
               pattern="[0-9]{10}"
@@ -73,6 +88,7 @@ export default function Contact() {
               onChange={handleChange}
             />
             <textarea
+              data-aos="fade-up"
               name="message"
               placeholder="YOUR MESSAGE"
               value={formData.message}
@@ -80,7 +96,7 @@ export default function Contact() {
               required
             />
           </div>
-          <div className="form-button">
+          <div data-aos="fade-up" className="form-button">
             <button type="submit">Submit</button>
           </div>
         </form>

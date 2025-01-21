@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
 import "./ThemeMode.css";
 import sun from "../../assets/Theme/sun.svg";
 import moon from "../../assets/Theme/moon.svg";
@@ -11,11 +12,11 @@ export default function () {
 
     const root = document.documentElement;
     if (darkMode) {
-      root.style.setProperty("--bg-color", "rgb(50, 50, 50)");
-      root.style.setProperty("--font-color", "rgb(225, 225, 225)");
+      root.style.setProperty("--bg-color", "rgb(20, 20, 20)");
+      root.style.setProperty("--font-color", "rgb(230, 230, 230)");
 
-      root.style.setProperty("--nav-bg-color", "rgb(50, 50, 50)");
-      root.style.setProperty("--nav-font-color", "rgb(225, 225, 225)");
+      root.style.setProperty("--nav-bg-color", "rgb(230, 230, 230)");
+      root.style.setProperty("--nav-font-color", "rgb(0, 0, 0)");
       root.style.setProperty(
         "--mobile-nav-cross-button-color",
         "rgb(225, 225, 225)"
@@ -23,17 +24,17 @@ export default function () {
       root.style.setProperty("--mobile-nav-bg-color", "rgb(50, 50, 50)");
       root.style.setProperty("--mobile-nav-font-color", "rgb(225, 225, 225)");
 
-      root.style.setProperty("--upper-shadow", "rgba(0, 0, 0, 0.3)");
+      root.style.setProperty("--upper-shadow", "rgba(0, 0, 0, 0.1)");
 
-      root.style.setProperty("--hero-bg-color", "rgb(50, 50, 50)");
-      root.style.setProperty("--hero-font-color", "rgb(225, 225, 225)");
+      root.style.setProperty("--hero-bg-color", "rgb(20, 20, 20)");
+      root.style.setProperty("--hero-font-color", "rgb(230, 230, 230)");
 
-      root.style.setProperty("--project-heading-bg-color", "rgb(50, 50, 50)");
+      root.style.setProperty("--project-heading-bg-color", "rgb(40, 40, 40)");
       root.style.setProperty(
         "--project-heading-font-color",
-        "rgb(225, 225, 225)"
+        "rgb(230, 230, 230)"
       );
-      root.style.setProperty("--project-bg-color", "rgb(50, 50, 50)");
+      root.style.setProperty("--project-bg-color", "rgb(40, 40, 40)");
       root.style.setProperty("--project-font-color", "rgb(225, 225, 225)");
     } else {
       root.style.setProperty("--bg-color", "rgb(225, 225, 225)");
@@ -45,7 +46,7 @@ export default function () {
       root.style.setProperty("--mobile-nav-bg-color", "rgb(225, 225, 225)");
       root.style.setProperty("--mobile-nav-font-color", "rgb(0,0,0)");
 
-      root.style.setProperty("--upper-shadow", "rgb(255, 255, 255)");
+      root.style.setProperty("--upper-shadow", "rgba(255, 255, 255, 0.5)");
 
       root.style.setProperty("--hero-bg-color", "rgb(225, 225, 225)");
       root.style.setProperty("--hero-font-color", "rgb(0,0,0)");
