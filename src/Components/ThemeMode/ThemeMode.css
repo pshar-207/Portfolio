@@ -43,6 +43,7 @@
     left: 2%;
     transform: translate(2%, 2%);
     animation: ThemeSlideInFromLeft 1s ease-out;
+    width: fit-content;
   }
   .sun-icon {
     width: 8vw;

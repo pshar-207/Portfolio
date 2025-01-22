@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FaMoon, FaSun } from "react-icons/fa";
 import "./ThemeMode.css";
 import sun from "../../assets/Theme/sun.svg";
 import moon from "../../assets/Theme/moon.svg";
