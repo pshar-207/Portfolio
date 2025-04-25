@@ -25,6 +25,9 @@
 }
 .project-list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
 }
 .project-contianer {
   background-color: var(--project-bg-color);

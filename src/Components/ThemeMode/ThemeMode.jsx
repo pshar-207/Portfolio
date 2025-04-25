@@ -13,6 +13,10 @@ export default function () {
     if (darkMode) {
       root.style.setProperty("--bg-color", "rgb(20, 20, 20)");
       root.style.setProperty("--font-color", "rgb(230, 230, 230)");
+      root.style.setProperty(
+        "--input-placeholder-font-color",
+        "rgb(255, 255, 255, 0.5)"
+      );
 
       root.style.setProperty("--nav-bg-color", "rgb(230, 230, 230)");
       root.style.setProperty("--nav-font-color", "rgb(0, 0, 0)");
@@ -38,6 +42,10 @@ export default function () {
     } else {
       root.style.setProperty("--bg-color", "rgb(225, 225, 225)");
       root.style.setProperty("--font-color", "rgb(0,0,0)");
+      root.style.setProperty(
+        "--input-placeholder-font-color",
+        "rgb(0, 0, 0, 0.5)"
+      );
 
       root.style.setProperty("--nav-bg-color", "rgb(225, 225, 225)");
       root.style.setProperty("--nav-font-color", "rgb(0,0,0)");

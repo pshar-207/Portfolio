@@ -82,6 +82,10 @@
   box-shadow: 0.5vw 0.5vw 1.5vw var(--lower-shadow),
     -0.5vw -0.5vw 1.5vw var(--upper-shadow);
 }
+.contact-list li a {
+  display: flex;
+}
+
 .contact-list img {
   width: 2.5vw;
 }

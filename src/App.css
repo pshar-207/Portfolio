@@ -1,7 +1,8 @@
 :root {
+  --font-family: "Roboto", serif;
   --bg-color: rgb(225, 225, 225);
   --font-color: rgb(0, 0, 0);
-  --font-family: "Roboto", serif;
+  --input-placeholder-font-color: rgba(0, 0, 0, 0.5);
 
   --nav-bg-color: rgb(225, 225, 225);
   --nav-font-color: rgb(0, 0, 0);

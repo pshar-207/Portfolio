@@ -30,6 +30,7 @@ form textarea {
   outline: none;
   background-color: var(--bg-color);
   color: var(--font-color);
+  font-family: var(--font-family);
   border-width: 0 0 0.3vw 0.3vw;
   border-style: solid;
   border-color: var(--font-color);
@@ -38,7 +39,7 @@ form textarea {
   font-size: 1.5vw;
 }
 form *::placeholder {
-  color: rbga(0, 0, 0, 0.1);
+  color: var(--input-placeholder-font-color);
 }
 
 form textarea {
